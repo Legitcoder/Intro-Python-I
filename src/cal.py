@@ -22,3 +22,14 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+current_month = datetime.month
+
+input = input("Enter month and year(optional):").split(' ')
+month = int(input[0])
+year = 2019
+try:
+    year = int(input[1])
+except:
+    year = 2019
+
+print(calendar.month(year, month))
